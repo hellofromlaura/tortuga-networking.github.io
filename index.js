@@ -1,4 +1,8 @@
-
+const config = {
+  root: document.body,
+  rootMargin: '-100px 0px',
+  threshold: [...Array(30).keys()].map(x => x / 29)
+};
 
 const observerRight = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -9,7 +13,7 @@ const observerRight = new IntersectionObserver((entries) => {
             entry.target.classList.remove('showRight')
         }
     })
-})
+}, config)
 
 const hiddenElementsRight = document.querySelectorAll('.hiddenRight')
 hiddenElementsRight.forEach((el) => observerRight.observe(el))
@@ -23,7 +27,7 @@ const observerLeft = new IntersectionObserver((entries) => {
             entry.target.classList.remove('showLeft')
         }
     })
-})
+}, config)
 
 const hiddenElementsLeft = document.querySelectorAll('.hiddenLeft')
 hiddenElementsLeft.forEach((el) => observerLeft.observe(el))
@@ -39,7 +43,7 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.classList.remove('show')
         }
     })
-})
+}, config)
 
 const hiddenElements = document.querySelectorAll('.hidden')
 hiddenElements.forEach((el) => observer.observe(el))
