@@ -61,25 +61,25 @@ body.brew {
 }
 .brew .text-2 {
     text-align: center;
-    margin: 9% 0;
+    margin: 9.3% 0 7%;
 }
 .brew .text-3 {
     text-align: center;
-    margin: 38.9% 0;
+    margin: 38.9% 0 0;
 }
 .brew .text-4 {
     text-align: end;
-    margin: 56% 11% 35.4% 0;
+    margin: 59% 11% 0 0;
 }
 .brew .text-5 {
-    margin: 0 0 19.4% 11%;
+    margin: 36% 0 19.4% 11%;
 }
 .brew .text-6 {
     text-align: center;
-    margin: 8.7% 0;
+    margin: 8.7% 0 0;
 }
 .brew .text-7 {
-    margin: 51.9% 0% 19.5% 56.8%;
+    margin: 51.9% 0% 0% 56.8%;
 }
 .brew .text-8 {
     margin: 19.8% 0% 9.2% 11.1%;
@@ -88,7 +88,7 @@ body.brew {
     margin: 9.9% 0% 19.4% 11%;
 }
 .brew .text-10 {
-    margin: 0 0 17.5% 57.3%;
+    margin: 0 0 18.5% 57.3%;
 }
 .brew .text-11 {
     margin: 18.2% 0% 17.5% 11%;
@@ -99,7 +99,7 @@ body.brew {
 }
 .brew .text-13 {
     text-align: center;
-    margin: 9.4% 0;
+    margin: 9.4% 0 0 0;
 }
 .brew .text-14 {
     margin: 45.9% 20% 8.2%;
@@ -132,4 +132,36 @@ body.brew {
 .brew .text-19 {
     text-align: center;
     margin: 3% 0 0;
+}
+.brew .position-up {
+    transform: translateX(-50%) translateY(-53%);
+    -webkit-transform: translateX(-50%) translateY(-53%);
+}
+.brew .position-up.showRight {
+    transform: translateX(0%) translateY(-53%);
+    -webkit-transform: translateX(0%) translateY(-53%);
+}
+.brew .position-up-1 {
+    transform: translateX(50%) translateY(-119%);
+    -webkit-transform: translateX(50%) translateY(-119%);
+}
+.brew .position-up-1.showLeft {
+    transform: translateX(0%) translateY(-119%);
+    -webkit-transform: translateX(0%) translateY(-119%);
+}
+.brew .position-up-2 {
+    transform: translateX(50%) translateY(-100%);
+    -webkit-transform: translateX(50%) translateY(-100%);
+}
+.brew .position-up-2.showLeft {
+    transform: translateX(0%) translateY(-100%);
+    -webkit-transform: translateX(0%) translateY(-100%);
+}
+.brew .position-up-3 {
+    transform: translateX(-50%) translateY(-113%);
+    -webkit-transform: translateX(-50%) translateY(-113%);
+}
+.brew .position-up-3.showRight {
+    transform: translateX(0%) translateY(-113%);
+    -webkit-transform: translateX(0%) translateY(-113%);
 }
